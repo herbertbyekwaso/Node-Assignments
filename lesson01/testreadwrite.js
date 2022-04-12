@@ -13,6 +13,7 @@ function ask() {
       if (err) {
         throw err;
       }
+      // This is a test line
       if (content.indexOf(filename) <= -1) {
         fs.writeFile(filename, "You are awesome", (err) => {
           if (err) throw err;
